@@ -275,41 +275,6 @@ p{
     background-color: rgb(17, 8, 58);
     box-shadow: 0 5px 15px rgb(11, 11, 14);
 }
-/* @media screen and (max-width: 768px){
-    .tryagain{
-    border-radius: 30px;
-    font-size: 0.7rem;
-    padding: 7px 16px;
-    
-}
-.check{
-    border-radius: 25px;
-    font-size: 0.7rem;
-    padding: 7px 16px;
-
-}
-    .result{
-    width: 50%;
-} */
-/* @media screen and (max-width: 320px){
-    .tryagain{
-    border-radius: 30px;
-    font-size: 0.7rem;
-    padding: 7px 16px;
-    
-}
-.check{
-    border-radius: 25px;
-    font-size: 0.7rem;
-    padding: 7px 16px;
-
-}
-    .result{
-    width: 60%;
-}
-    
-} */
-
     
 @media screen and (max-width: 591px){
     .textMode{
@@ -325,7 +290,13 @@ p{
     }
 
 }
-@media screen and (max-width: 477px){
+@media screen and (max-width: 600px){
+    header{
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .textMode{
         display: none;
     }
@@ -340,21 +311,30 @@ p{
         width: 80%;
     }
     label{
-    position: absolute;
-    right: 35px;
-    top: 30px;
-    width: 60px;
-    height: 30px;
-}
-label:after{
-    content: '';
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 8px;
-    left: 10px;
-
-}
+        position: absolute;
+        right: 35px;
+        top: 20px;
+        width: 40px;
+        height: 20px;
+    }
+    label:after{
+        content: '';
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 4px;
+        left: 6px;
+    
+    }
+    
+    input:checked + label:after{
+        left: 20px;
+    
+    }
+    img{
+        height: 20px;
+        margin-left: -15px;
+    }
 
 }
 @media screen and (max-width: 400px){
@@ -362,10 +342,7 @@ label:after{
         font-size: 1rem;
     }
 
-    img{
-        height: 20px;
-        margin-left: -15px;
-    }
+
     .textLogo{
         font-size: 1.1rem;
        
@@ -373,31 +350,5 @@ label:after{
     .option{
         width: 80%;
     }
-    label{
-    position: absolute;
-    right: 35px;
-    top: 20px;
-    width: 40px;
-    height: 20px;
-}
-label:after{
-    content: '';
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    top: 4px;
-    left: 6px;
-
-}
-header{
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-}
-input:checked + label:after{
-    left: 20px;
 
 }

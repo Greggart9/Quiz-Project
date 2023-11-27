@@ -137,6 +137,9 @@ function Retake(){
     question_container.style.display = 'flex'
     result.style.display = 'none'
     result_container.style.display = 'none'
+    reveal_answer.style.display = 'none'
+    reveal_container.style.display = 'none'
+
     scoreBoard.length = 0;
     displayQuestion(i = 0)
 }
