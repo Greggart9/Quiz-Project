@@ -70,6 +70,7 @@ var reveal_answer = document.querySelector('.reveal_answer')
 var reveal_container = document.querySelector('.reveal_container')
 var answer0 = document.querySelector('.answer0')
 var score_result = document.querySelector('.score_result')
+var resulth1 = document.querySelector('.resulth1')
 
 
 
@@ -183,6 +184,16 @@ darkmodeToggle.addEventListener('click', function(){
     button.classList.toggle('darkButton')
     nbutton.classList.toggle('darkButton')
     result.classList.toggle('darkResult')
+    score_result.classList.toggle('darkText')
+    resulth1.classList.toggle('darkText')
+    tryagain.classList.toggle('darkText')
+    check.classList.toggle('darkText')
+    retake.classList.toggle('darkText')
+    tryagain.classList.toggle('darkmode')
+    check.classList.toggle('darkmode')
+    retake.classList.toggle('darkmode')
+    reveal_answer.classList.toggle('darkText')
+    reveal_answer.classList.toggle('darkResult')
 
 })
 
