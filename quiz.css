@@ -34,6 +34,7 @@ img{
     height: 50px;
     padding-left: 30px;
     left: 0;
+    border-radius: 25px;
 }
 .textLogo{
     font-size: 32px;
@@ -130,6 +131,7 @@ p{
     align-items: center;
 }
 .questions{
+    font-size: .9rem;
     background-color: rgb(240, 5, 220);
     width: 90%;
     border-radius: 10px;

@@ -1,29 +1,35 @@
 //Question bank
 var questionBank = [
     {
-        question : 'What is my name?',
-        option : ['Oluwadamilare', 'Jimisola', 'Stephen', 'Helen'],
-        answer : 'Oluwadamilare'
+        question : 'Which Somo possess these traits? Mischievous, Charismatic, Careless, Generally good-natured, Imaginative, Multifaceted',
+        option : ['Kali', 'Bloomi', 'Tripps', 'Chungus'],
+        answer : 'Tripps'
     },
     {
-        question : 'How old am i?',
-        option : ['20', '21', '22', '23'],
-        answer : '21'
+        question : 'Which Somo possess these traits? Vain, Lofty, Controlling, Loyal, Vicious, Impulsive',
+        option : ['Slimer', 'Alter', 'Bloomi', 'Kali'],
+        answer : 'Kali'
     },
     {
-        question : 'When is my birthday?',
-        option : ['Jan 20', 'Sept 20', 'Feb 20', 'May 20'],
-        answer : 'Sept 20'
+        question : 'Which Somo possess these traits? Adventurous, Friendly, (At lvl 3) Stern, (lvl 3) Self serious, Disorderly, Forgetful',
+        option : ['Slimer', 'Clotty', 'Graven', 'Drakk'],
+        answer : 'Slimer'
     },
     {
-        question : 'What is my nickname?',
-        option : ['Greggart9', 'Daiki', '4sixteres', 'Easy'],
-        answer : 'Greggart9'
+        question : 'Which Somo possess these traits? Naive, Intelligent, Curious, Defensive, Chaotic, Angry',
+        option : ['Drakk', 'Techno-g', 'Alter', 'Chungus'],
+        answer : 'Techno-g'
     },
     {
-        question : 'What is my favourite pet?',
-        option : ['Cat', 'Dog', 'Bird', 'Horse'],
-        answer : 'Dog'
+        question : 'Which Somo possess these traits? Sleepy, Protective, Irritable,Cuddly, Mellow, Inert',
+        option : ['Slimer', 'Techno-g', 'Kali', 'Chungus'],
+        answer : 'Chungus'
+    },
+
+    {
+        question : "Which of the accounts below is Somo's Official account on X ?",
+        option : ['@PlaySomo', '@playsomo', '@play_somo', '@plaaysomo'],
+        answer : '@playsomo'
     }
 ]
 //variable declaration
