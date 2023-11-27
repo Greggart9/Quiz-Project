@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg's Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body class="theBody">
+    <section>
+        <header class="header">
+            <div class="content">
+                <img src="img/twitter.png" alt="logo">
+                <h1 class="textLogo">Greg's Quiz</h1>
+                <div class="modeBtn">
+                    <h3 class="textMode">dark/light mode</h3>
+                    <input type="checkbox" id="darkmodeToggle">
+                    <label for="darkmodeToggle"></label>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="question_container">
+            <div class="container">
+               <div class="first">
+                    <div class="questions">
+                        <h3 class="que"></h3>
+                        <ol class="allOptions" type="a">
+                           <li><button class="option" id="option0"></button></li>
+                           <li><button class="option" id="option1"></button></li>
+                           <li><button class="option" id="option2"></button></li>
+                           <li><button class="option" id="option3"></button></li>
+                     </ol>
+
+                     <p class="qCounter"></p>
+                    </div>
+               </div>
+     
+                <!--button-->
+                <div class="second">
+                    <div class="prevBtn" >
+                        <button class="button" type="button">Previous</button>
+                    </div>
+                    <div class="nextBtn">
+                        <button class="nbutton" type="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result_container">
+            <div class="result">
+                <h2 class="resulth1">Your Score</h2>
+                <p class="score_result"></p>
+                <div class="resultBtn">
+                    <button class="tryagain" type="button">Back to Quiz</button>
+                    <button class="check" type="button">Check Answers</button>
+                </div>  
+            </div>
+        </div>
+
+           <!-- reveal Answers -->
+        <div class="reveal_container">
+            <div class="reveal_answer">
+                <h2>Answers</h2>
+                <ol class="allAnswer" type="1">
+                    <li class="answer0"></li>
+                    <li class="answer1"></li>
+                    <li class="answer2"></li>
+                    <li class="answer3"></li>
+                    <li class="answer4"></li> 
+                </ol>
+
+                <div class="RetakeBtn">
+                    <button class="Retake" type="button">Restart</button>
+                </div> 
+    
+            </div>
+        </div>
+    </section>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
