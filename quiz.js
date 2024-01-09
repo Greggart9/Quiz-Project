@@ -77,6 +77,7 @@ var reveal_container = document.querySelector('.reveal_container')
 var answer0 = document.querySelector('.answer0')
 var score_result = document.querySelector('.score_result')
 var resulth1 = document.querySelector('.resulth1')
+var startcontainer = document.querySelector('.startcontainer')
 
 
 
@@ -122,6 +123,7 @@ function nextButton(){
         result_container.style.display = 'flex'
         result.style.display = 'block'
         question_container.style.display = 'none'
+        startcontainer.style.display = 'none'
         score_result.innerHTML = count(scoreBoard) + '/' + questionBank.length
     }
 }
@@ -264,3 +266,30 @@ option3.addEventListener('click', function(e){
     option3.classList.add('optionBg')
 
 })
+var timeLimit = 30; // Time limit in seconds
+    var timer;
+
+    function startQuiz() {
+        document.getElementById('startButton').style.display = 'none'
+        question_container.style.display = 'flex';
+        timer = setInterval(updateTimer, 1000);
+    }
+
+    function updateTimer() {
+        var minutes = Math.floor(timeLimit / 60);
+        var seconds = timeLimit % 60;
+        document.getElementById('countdown').innerHTML = minutes + "m " + seconds + "s ";
+
+        if (timeLimit == 0) {
+            clearInterval(timer);
+            alert("Time's up! Quiz has ended."); // You can customize this alert or add logic for quiz completion
+            result_container.style.display = 'flex'
+            result.style.display = 'block'
+            question_container.style.display = 'none'
+            score_result.innerHTML = count(scoreBoard) + '/' + questionBank.length
+            document.getElementById('startButton').style.display = 'none'
+            startcontainer.style.display = 'none'
+        } else {
+            timeLimit--;
+        }
+    }
